@@ -2,7 +2,8 @@
     {
         "id": 1,
         "image": "../assets/img/employee/michael.jpg",
-        "name": "Michael Scott",
+        "first_name": "Michael",
+        "last_name": "Scott",
         "title": "Regional Manager",
         "department": "Management",
         "email": "mscott@dundermifflin.com",
@@ -11,7 +12,8 @@
     {
         "id": 2,
         "image": "../assets/img/employee/jim.jpg",
-        "name": "Jim Halpert",
+        "first_name": "Jim",
+        "last_name": "Halpert",
         "title": "Assistant Regional Manager",
         "department": "Management",
         "email": "jhalpert@dundermifflin.com",
@@ -20,7 +22,8 @@
     {
         "id": 3,
         "image": "../assets/img/employee/dwight.jpg",
-        "name": "Dwight Schrute",
+        "first_name": "Dwight",
+        "last_name": "Schrute",
         "title": "Head Salesman",
         "department": "Sales",
         "email": "dschrute@dundermifflin.com",
@@ -29,7 +32,8 @@
     {
         "id": 4,
         "image": "../assets/img/employee/pam.jpg",
-        "name": "Pam Beesly",
+        "first_name": "Pam",
+        "last_name": "Beesly",
         "title": "Office Manager",
         "department": "Administration",
         "email": "pbeesly@dundermifflin.com",
@@ -38,7 +42,8 @@
     {
         "id": 5,
         "image": "../assets/img/employee/ryan.jpg",
-        "name": "Ryan Howard",
+        "first_name": "Ryan",
+        "last_name": "Howard",
         "title": "Salesman",
         "department": "Sales",
         "email": "rhoward@dundermifflin.com",
@@ -47,7 +52,8 @@
     {
         "id": 6,
         "image": "../assets/img/employee/andy.jpg",
-        "name": "Andy Bernard",
+        "first_name": "Andy",
+        "last_name": "Bernard",
         "title": "Salesman",
         "department": "Sales",
         "email": "abernard@dundermifflin.com",
@@ -56,7 +62,8 @@
     {
         "id": 7,
         "image": "../assets/img/employee/angela.jpg",
-        "name": "Angela Martin",
+        "first_name": "Angela",
+        "last_name": "Martin",
         "title": "Senior Accountant",
         "department": "Finance",
         "email": "amartin@dundermifflin.com",
@@ -65,7 +72,8 @@
     {
         "id": 8,
         "image": "../assets/img/employee/kelly.jpg",
-        "name": "Kelly Kapoor",
+        "first_name": "Kelly",
+        "last_name": "Kapoor",
         "title": "Customer Service Representative",
         "department": "Product Oversight",
         "email": "kkapoor@dundermifflin.com",
@@ -74,7 +82,8 @@
     {
         "id": 9,
         "image": "../assets/img/employee/toby.jpg",
-        "name": "Toby Flenderson",
+        "first_name": "Toby",
+        "last_name": "Flenderson",
         "title": "HR Representative",
         "department": "Human Resources",
         "email": "tflenderson@dundermifflin.com",
@@ -83,7 +92,8 @@
     {
         "id": 10,
         "image": "../assets/img/employee/creed.jpg",
-        "name": "Creed Bratton",
+        "first_name": "Creed",
+        "last_name": "Bratton",
         "title": "Head of Quality Assurance",
         "department": "Product Oversight",
         "email": "cbratton@dundermifflin.com",
@@ -92,7 +102,8 @@
     {
         "id": 11,
         "image": "../assets/img/employee/darryl.jpg",
-        "name": "Darryl Philbin",
+        "first_name": "Darryl",
+        "last_name": "Philbin",
         "title": "Warehouse Manager",
         "department": "Warehouse",
         "email": "dphilbin@dundermifflin.com",
@@ -101,7 +112,8 @@
     {
         "id": 12,
         "image": "../assets/img/employee/kevin.jpg",
-        "name": "Kevin Malone",
+        "first_name": "Kevin",
+        "last_name": "Malone",
         "title": "Accountant",
         "department": "Finance",
         "email": "kmalone@dundermifflin.com",
@@ -110,7 +122,8 @@
     {
         "id": 13,
         "image": "../assets/img/employee/meredith.jpg",
-        "name": "Meredith Palmer",
+        "first_name": "Meredith",
+        "last_name": "Palmer",
         "title": "Supplier Relations Representative",
         "department": "Product Oversight",
         "email": "mpalmer@dundermifflin.com",
@@ -119,7 +132,8 @@
     {
         "id": 14,
         "image": "../assets/img/employee/oscar.jpg",
-        "name": "Oscar Martinez",
+        "first_name": "Oscar",
+        "last_name": "Martinez",
         "title": "Chief Accountant",
         "department": "Finance",
         "email": "omartinez@dundermifflin.com",
@@ -128,7 +142,8 @@
     {
         "id": 15,
         "image": "../assets/img/employee/phyllis.jpg",
-        "name": "Phyllis Lapin-Vance",
+        "first_name": "Phyllis",
+        "last_name": "Lapin-Vance",
         "title": "Salesman",
         "department": "Sales",
         "email": "plapin@dundermifflin.com",
@@ -137,7 +152,8 @@
     {
         "id": 16,
         "image": "../assets/img/employee/stanley.jpg",
-        "name": "Stanley Hudson",
+        "first_name": "Stanley",
+        "last_name": "Hudson",
         "title": "Salesman",
         "department": "Sales",
         "email": "shudson@dundermifflin.com",
@@ -146,7 +162,8 @@
     {
         "id": 17,
         "image": "../assets/img/employee/erin.jpg",
-        "name": "Erin Hannon",
+        "first_name": "Erin",
+        "last_name": "Hannon",
         "title": "Receptionist",
         "department": "Administration",
         "email": "reception@dundermifflin.com",
