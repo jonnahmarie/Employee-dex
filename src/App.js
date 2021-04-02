@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import CardList from './components/CardList';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Layout from './components/Layout';
+import Nav from './components/Nav';
+import data from './data/employeeData.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const [ searchTerm, setSearchTerm ] = useState("");
+  const [ sort, setSort ] = useState(false);
+  const [ employees, setEmployees ] = useState(data);
 
-export default App;
+  function handleSearchTerm(event) {
+    setSearchTerm(event.target.value);
+  }
+
+  function handleSortDept() {
+    if (!sort) {
+      setEmployees(employees.sort((a, b) => (a.department > b.department) ? 1 : -1));
+    } else {
+      setEmployees(employees.sort((a, b) => (a.department, b.department) ? -1 : 1));
+      setSort(false);
+    }
+  } 
+
+  const employeeLowerCase = data.filter(
+    employee => employee.last_name.toLowerCase().startsWith(searchTerm.toLowerCase())
+  );
+  
+}
