@@ -11,8 +11,24 @@ function App() {
   const [ sort, setSort ] = useState(false);
   const [ employees, setEmployees ] = useState(data);
 
-  function handleSearchTerm(event) {
-    setSearchTerm(event.target.value);
+  const excludeColumns = ["id", "image", "title", "department", "email", "phone"];
+
+  function handleSearchTerm(value) {
+    setSearchTerm(value);
+    filterData(value);
+  }
+
+  function filterData(value) {
+    const lowercasedValue = value.toLowerCase().trim;
+    if (lowercasedValue === "") {
+      setEmployees(data);
+    } else {
+      const filteredData = dataList.filter(item => {
+        return Object.keys(item).some(key =>
+          excludeColumns.includes(key) ? false : item[key].toString().toLowerCase().includes(lowercasedValue));
+      });
+      setEmployees(filteredData);
+    }
   }
 
   function handleSortDept() {
@@ -24,8 +40,24 @@ function App() {
     }
   } 
 
-  const employeeLowerCase = data.filter(
-    employee => employee.last_name.toLowerCase().startsWith(searchTerm.toLowerCase())
-  );
+  const filteredEmployees = data.filter(employee => employee.last_name.toLowerCase().startsWith(searchTerm.toLowerCase()));
+
+  return (
+    <div>
+      <Header />
+        <Layout>
+          <h1>
+            Employee Directory
+          </h1>
+          <Nav 
+            onSearch={handleSearchTerm}
+            searchTerm={searchTerm}
+            handleSortDept={handleSortDept}
+          />
+          <CardList data={filteredEmployees}/>
+        </Layout>
+      <Footer />
+    </div>
+  )
   
 }
