@@ -1,0 +1,155 @@
+[
+    {
+        "id": 1,
+        "image": "../assets/img/employee/michael.jpg",
+        "name": "Michael Scott",
+        "title": "Regional Manager",
+        "department": "Management",
+        "email": "mscott@dundermifflin.com",
+        "phone": "555-152-7845"
+    },
+    {
+        "id": 2,
+        "image": "../assets/img/employee/jim.jpg",
+        "name": "Jim Halpert",
+        "title": "Assistant Regional Manager",
+        "department": "Management",
+        "email": "jhalpert@dundermifflin.com",
+        "phone": "555-456-1645"
+    },
+    {
+        "id": 3,
+        "image": "../assets/img/employee/dwight.jpg",
+        "name": "Dwight Schrute",
+        "title": "Head Salesman",
+        "department": "Sales",
+        "email": "dschrute@dundermifflin.com",
+        "phone": "555-689-1548"
+    },
+    {
+        "id": 4,
+        "image": "../assets/img/employee/pam.jpg",
+        "name": "Pam Beesly",
+        "title": "Office Manager",
+        "department": "Administration",
+        "email": "pbeesly@dundermifflin.com",
+        "phone": "555-789-4568"
+    },
+    {
+        "id": 5,
+        "image": "../assets/img/employee/ryan.jpg",
+        "name": "Ryan Howard",
+        "title": "Salesman",
+        "department": "Sales",
+        "email": "rhoward@dundermifflin.com",
+        "phone": "555-456-1647"
+    },
+    {
+        "id": 6,
+        "image": "../assets/img/employee/andy.jpg",
+        "name": "Andy Bernard",
+        "title": "Salesman",
+        "department": "Sales",
+        "email": "abernard@dundermifflin.com",
+        "phone": "555-995-4979"
+    },
+    {
+        "id": 7,
+        "image": "../assets/img/employee/angela.jpg",
+        "name": "Angela Martin",
+        "title": "Senior Accountant",
+        "department": "Finance",
+        "email": "amartin@dundermifflin.com",
+        "phone": "555-487-1548"
+    },
+    {
+        "id": 8,
+        "image": "../assets/img/employee/kelly.jpg",
+        "name": "Kelly Kapoor",
+        "title": "Customer Service Representative",
+        "department": "Product Oversight",
+        "email": "kkapoor@dundermifflin.com",
+        "phone": "555-469-1154"
+    },
+    {
+        "id": 9,
+        "image": "../assets/img/employee/toby.jpg",
+        "name": "Toby Flenderson",
+        "title": "HR Representative",
+        "department": "Human Resources",
+        "email": "tflenderson@dundermifflin.com",
+        "phone": "555-442-4469"
+    },
+    {
+        "id": 10,
+        "image": "../assets/img/employee/creed.jpg",
+        "name": "Creed Bratton",
+        "title": "Head of Quality Assurance",
+        "department": "Product Oversight",
+        "email": "cbratton@dundermifflin.com",
+        "phone": "555-666-7899"
+    },
+    {
+        "id": 11,
+        "image": "../assets/img/employee/darryl.jpg",
+        "name": "Darryl Philbin",
+        "title": "Warehouse Manager",
+        "department": "Warehouse",
+        "email": "dphilbin@dundermifflin.com",
+        "phone": "555-777-2256"
+    },
+    {
+        "id": 12,
+        "image": "../assets/img/employee/kevin.jpg",
+        "name": "Kevin Malone",
+        "title": "Accountant",
+        "department": "Finance",
+        "email": "kmalone@dundermifflin.com",
+        "phone": "555-456-1564"
+    },
+    {
+        "id": 13,
+        "image": "../assets/img/employee/meredith.jpg",
+        "name": "Meredith Palmer",
+        "title": "Supplier Relations Representative",
+        "department": "Product Oversight",
+        "email": "mpalmer@dundermifflin.com",
+        "phone": "555-699-5469"
+    },
+    {
+        "id": 14,
+        "image": "../assets/img/employee/oscar.jpg",
+        "name": "Oscar Martinez",
+        "title": "Chief Accountant",
+        "department": "Finance",
+        "email": "omartinez@dundermifflin.com",
+        "phone": "555-489-0078"
+    },
+    {
+        "id": 15,
+        "image": "../assets/img/employee/phyllis.jpg",
+        "name": "Phyllis Lapin-Vance",
+        "title": "Salesman",
+        "department": "Sales",
+        "email": "plapin@dundermifflin.com",
+        "phone": "555-545-4554"
+    },
+    {
+        "id": 16,
+        "image": "../assets/img/employee/stanley.jpg",
+        "name": "Stanley Hudson",
+        "title": "Salesman",
+        "department": "Sales",
+        "email": "shudson@dundermifflin.com",
+        "phone": "555-424-4556"
+    },
+    {
+        "id": 17,
+        "image": "../assets/img/employee/erin.jpg",
+        "name": "Erin Hannon",
+        "title": "Receptionist",
+        "department": "Administration",
+        "email": "reception@dundermifflin.com",
+        "phone": "555-047-5348"
+    }
+]
