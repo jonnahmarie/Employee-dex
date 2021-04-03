@@ -1,61 +1,50 @@
 import React, {useState} from 'react';
-import CardList from './components/CardList';
+import EmployeeCardList from './components/EmployeeCardList';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Layout from './components/Layout';
 import Nav from './components/Nav';
 import data from './data/employeeData.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   const [ searchTerm, setSearchTerm ] = useState("");
   const [ sort, setSort ] = useState(false);
-  const [ employees, setEmployees ] = useState(data);
+  const [ name, setName ] = useState(data);
+  // const [ employees, setEmployees ] = useState(data);
 
-  const excludeColumns = ["id", "image", "title", "department", "email", "phone"];
+  const handleSearchTerm = event => {
+    setSearchTerm(event.target.value)
+  };
 
-  function handleSearchTerm(value) {
-    setSearchTerm(value);
-    filterData(value);
-  }
-
-  function filterData(value) {
-    const lowercasedValue = value.toLowerCase().trim;
-    if (lowercasedValue === "") {
-      setEmployees(data);
-    } else {
-      const filteredData = data.filter(item => {
-        return Object.keys(item).some(key =>
-          excludeColumns.includes(key) ? false : item[key].toString().toLowerCase().includes(lowercasedValue));
-      });
-      setEmployees(filteredData);
-    }
-  }
-
-  function handleSortDept() {
+  const handleSortName = () => {
+    console.log("clicked");
     if (!sort) {
-      setEmployees(employees.sort((a, b) => (a.department > b.department) ? 1 : -1));
+      setName(name.sort((a, b) => (a.last_name > b.last_name) ? 1 : -1));
+      setSort(true);
     } else {
-      setEmployees(employees.sort((a, b) => (a.department, b.department) ? -1 : 1));
+      setName(name.sort((a, b) => (a.last_name > b.last_name) ? -1 : 1));
       setSort(false);
-    }
-  } 
-
-  const filteredEmployees = data.filter(employee => employee.last_name.toLowerCase().startsWith(searchTerm.toLowerCase()));
+    };
+  };
 
   return (
-    <div>
+    <div style={{backgroundColor: "#f7f7f7"}}>
       <Header />
+      <Container>
         <Layout>
-          <h1>
-            Employee Directory
-          </h1>
-          <Nav 
-            onSearch={handleSearchTerm}
-            searchTerm={searchTerm}
-            handleSortDept={handleSortDept}
-          />
-          <CardList data={filteredEmployees}/>
-        </Layout>
+            <h1 className="mb-5 text-center display-4">
+              Scranton Branch - Employee Directory
+            </h1>
+            <Nav 
+              onSearch={handleSearchTerm}
+              searchTerm={searchTerm}
+              handleSortDept={handleSortName}
+            />
+            <EmployeeCardList data={data}/>
+          </Layout>
+      </Container>
       <Footer />
     </div>
   )
