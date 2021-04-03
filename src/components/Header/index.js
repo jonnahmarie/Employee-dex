@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/img/Dunder_Mifflin_logo.png';
+import Logo from '../../assets/img/Dunder_Mifflin_logo.png';
 
 function Header() {
     return (

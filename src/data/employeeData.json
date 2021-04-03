@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "../assets/img/employee/michael.jpg",
+        "image": "https://i.ibb.co/CPGPDfj/michael.jpg",
         "first_name": "Michael",
         "last_name": "Scott",
         "title": "Regional Manager",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "image": "../assets/img/employee/jim.jpg",
+        "image": "https://i.ibb.co/KLp7QxP/jim.jpg",
         "first_name": "Jim",
         "last_name": "Halpert",
         "title": "Assistant Regional Manager",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "image": "../assets/img/employee/dwight.jpg",
+        "image": "https://i.ibb.co/ZGtgn7p/dwight.jpg",
         "first_name": "Dwight",
         "last_name": "Schrute",
         "title": "Head Salesman",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "image": "../assets/img/employee/pam.jpg",
+        "image": "https://i.ibb.co/0CxRJgG/pam.jpg",
         "first_name": "Pam",
         "last_name": "Beesly",
         "title": "Office Manager",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "image": "../assets/img/employee/ryan.jpg",
+        "image": "https://i.ibb.co/JR85t6k/ryan.jpg",
         "first_name": "Ryan",
         "last_name": "Howard",
         "title": "Salesman",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "image": "../assets/img/employee/andy.jpg",
+        "image": "https://i.ibb.co/bF7hgzM/andy.jpg",
         "first_name": "Andy",
         "last_name": "Bernard",
         "title": "Salesman",
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "image": "../assets/img/employee/angela.jpg",
+        "image": "https://i.ibb.co/HH1PPnj/angela.jpg",
         "first_name": "Angela",
         "last_name": "Martin",
         "title": "Senior Accountant",
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "image": "../assets/img/employee/kelly.jpg",
+        "image": "https://i.ibb.co/p1wc1mq/kelly.jpg",
         "first_name": "Kelly",
         "last_name": "Kapoor",
         "title": "Customer Service Representative",
@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "image": "../assets/img/employee/toby.jpg",
+        "image": "https://i.ibb.co/DfNRGQJ/toby.jpg",
         "first_name": "Toby",
         "last_name": "Flenderson",
         "title": "HR Representative",
@@ -91,7 +91,7 @@
     },
     {
         "id": 10,
-        "image": "../assets/img/employee/creed.jpg",
+        "image": "https://i.ibb.co/t3mjY2j/creed.jpg",
         "first_name": "Creed",
         "last_name": "Bratton",
         "title": "Head of Quality Assurance",
@@ -101,7 +101,7 @@
     },
     {
         "id": 11,
-        "image": "../assets/img/employee/darryl.jpg",
+        "image": "https://i.ibb.co/rFHfm4F/darryl.jpg",
         "first_name": "Darryl",
         "last_name": "Philbin",
         "title": "Warehouse Manager",
@@ -111,7 +111,7 @@
     },
     {
         "id": 12,
-        "image": "../assets/img/employee/kevin.jpg",
+        "image": "https://i.ibb.co/k9CT3Xf/kevin.jpg",
         "first_name": "Kevin",
         "last_name": "Malone",
         "title": "Accountant",
@@ -121,7 +121,7 @@
     },
     {
         "id": 13,
-        "image": "../assets/img/employee/meredith.jpg",
+        "image": "https://i.ibb.co/Mfs2gpb/meredith.jpg",
         "first_name": "Meredith",
         "last_name": "Palmer",
         "title": "Supplier Relations Representative",
@@ -131,7 +131,7 @@
     },
     {
         "id": 14,
-        "image": "../assets/img/employee/oscar.jpg",
+        "image": "https://i.ibb.co/McRbggQ/oscar.jpg",
         "first_name": "Oscar",
         "last_name": "Martinez",
         "title": "Chief Accountant",
@@ -141,7 +141,7 @@
     },
     {
         "id": 15,
-        "image": "../assets/img/employee/phyllis.jpg",
+        "image": "https://i.ibb.co/DCNY5HP/phyllis.jpg",
         "first_name": "Phyllis",
         "last_name": "Lapin-Vance",
         "title": "Salesman",
@@ -151,7 +151,7 @@
     },
     {
         "id": 16,
-        "image": "../assets/img/employee/stanley.jpg",
+        "image": "https://i.ibb.co/b1pS44h/stanley.jpg",
         "first_name": "Stanley",
         "last_name": "Hudson",
         "title": "Salesman",
@@ -161,7 +161,7 @@
     },
     {
         "id": 17,
-        "image": "../assets/img/employee/erin.jpg",
+        "image": "https://i.ibb.co/NLGHywz/erin.jpg",
         "first_name": "Erin",
         "last_name": "Hannon",
         "title": "Receptionist",

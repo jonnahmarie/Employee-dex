@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav({onSearch, sortDept}) {
+function Nav({onSearch, searchTerm, sortDept}) {
     return (
         <div>
             <form>
@@ -17,3 +17,5 @@ function Nav({onSearch, sortDept}) {
         </div>
     );
 }
+
+export default Nav;

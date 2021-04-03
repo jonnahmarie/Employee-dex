@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Card({name, image, title, department, email, phone}) {
+function Card({ image, first_name, last_name, title, department, email, phone }) {
+
     return (
         <div>
-            <img src={image} alt={name} />
-            <p>{name}</p>
+            <img src={image} alt="employee" />
+            <p>Hello World</p>
             <p>{title}</p>
             <p>{department}</p>
             <p>{email}</p>

@@ -23,7 +23,7 @@ function App() {
     if (lowercasedValue === "") {
       setEmployees(data);
     } else {
-      const filteredData = dataList.filter(item => {
+      const filteredData = data.filter(item => {
         return Object.keys(item).some(key =>
           excludeColumns.includes(key) ? false : item[key].toString().toLowerCase().includes(lowercasedValue));
       });
@@ -59,5 +59,6 @@ function App() {
       <Footer />
     </div>
   )
-  
 }
+
+export default App;

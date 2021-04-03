@@ -1,19 +1,20 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "../Card";
 
-function CardList({data}) {
+
+function CardList ({ data }) { 
     return (
-        data.map(employee => {
-            <Card 
+        data.map(employee => (
+            <Card
                 key={employee.id}
                 image={employee.image}
                 name={employee.name}
                 title={employee.title}
-                department={employee.department}
+                dept={employee.department}
                 email={employee.email}
                 phone={employee.phone}
             />
-        })
+            ))
     );
 }
 
