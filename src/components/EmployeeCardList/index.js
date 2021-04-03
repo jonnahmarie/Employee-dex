@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "../Card";
+import EmployeeCard from "../EmployeeCard";
 
 
-function CardList ({ data }) { 
+function EmployeeCardList ({ data }) { 
     return (
         data.map(employee => (
-            <Card
+            <EmployeeCard
                 key={employee.id}
                 image={employee.image}
                 name={employee.name}
@@ -18,4 +18,4 @@ function CardList ({ data }) {
     );
 }
 
-export default CardList;
+export default EmployeeCardList;
