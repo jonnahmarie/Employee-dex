@@ -11,23 +11,38 @@ import { Container } from 'react-bootstrap';
 function App() {
   const [ searchTerm, setSearchTerm ] = useState("");
   const [ sort, setSort ] = useState(false);
-  const [ name, setName ] = useState(data);
-  // const [ employees, setEmployees ] = useState(data);
+  const [ dataset, setEmployees ] = useState(data);
+  // const [ role, setRole ] = useState(data.employees);
 
-  const handleSearchTerm = event => {
-    setSearchTerm(event.target.value)
+  const handleSearchTerm = value => {
+    setSearchTerm(value);
+    // filteredEmployees(value);
   };
 
-  const handleSortName = () => {
-    console.log("clicked");
+  const handleSortName = (event) => {
+    event.stopPropagation();
     if (!sort) {
-      setName(name.sort((a, b) => (a.last_name > b.last_name) ? 1 : -1));
+      setEmployees(dataset.sort((a, b) => (a.last_name > b.last_name) ? 1 : -1));
       setSort(true);
     } else {
-      setName(name.sort((a, b) => (a.last_name > b.last_name) ? -1 : 1));
+      setEmployees(dataset.sort((a, b) => (a.last_name > b.last_name) ? -1 : 1));
       setSort(false);
     };
   };
+
+  // const filteredEmployees = (value) => {
+  //   const lowercasedValue = value.toLowerCase().trim();
+  //   const splitRoles = data.employees.title.toLowerCase().split(' ');
+  //   const allRoles = Object.values(splitRoles).flat();
+  //   const filteredRoles = [...new Set(allRoles)];
+
+  //   if (lowercasedValue === "") {
+  //     setRole(filteredRoles)
+  //   } else {
+  //     const filterData = role.filter(employee => filteredRoles.toLowerCase().startsWith(lowercasedValue));
+  //     setRole(filterData);
+  //   }
+  // }
 
   return (
     <div style={{backgroundColor: "#f7f7f7"}}>
@@ -40,7 +55,7 @@ function App() {
             <Nav 
               onSearch={handleSearchTerm}
               searchTerm={searchTerm}
-              handleSortDept={handleSortName}
+              handleSortName={handleSortName}
             />
             <EmployeeCardList data={data}/>
           </Layout>
