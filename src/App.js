@@ -39,23 +39,7 @@ function App() {
     };
   };
 
-  // const excludedColumns = ["id", "image", "name", "department", "email", "phone"]
-
   const filteredEmployees =  dataset.filter(employee => employee.title.toLowerCase().includes(searchTerm.toLowerCase()))
-
-  // const filteredEmployees = (value) => {
-  //   const lowercasedValue = value.toLowerCase().trim();
-  //   const splitRoles = data.employees.title.toLowerCase().split(' ');
-  //   const allRoles = Object.values(splitRoles).flat();
-  //   const filteredRoles = [...new Set(allRoles)];
-
-  //   if (lowercasedValue === "") {
-  //     setRole(filteredRoles)
-  //   } else {
-  //     const filterData = role.filter(employee => filteredRoles.toLowerCase().startsWith(lowercasedValue));
-  //     setRole(filterData);
-  //   }
-  // }
 
   return (
     <div style={{backgroundColor: "#f7f7f7"}}>
