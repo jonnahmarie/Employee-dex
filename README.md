@@ -49,5 +49,7 @@ SOFTWARE.
 
 ## Disclaimer
 Characters of The Office (US) & Dunder Mifflin Paper Company & the television series are property of NBC and was developed for television by Greg Daniels.
+
 Employee photos were cropped from [DunderPedia](https://theoffice.fandom.com/).
+
 Photos are hosted on [imgbb.com](https://imgbb.com/).
