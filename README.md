@@ -16,7 +16,7 @@ npm start
 The application will automatically run in your browser.
 
 ### From the deployed web application
-No installation is necessary. Please access the deployed application by visiting: [https://young-headland-18735.herokuapp.com/](https://young-headland-18735.herokuapp.com/).
+No installation is necessary. Please access the deployed application by visiting: [https://serene-stream-10506.herokuapp.com/](https://serene-stream-10506.herokuapp.com/).
 
 ### Usage
 
