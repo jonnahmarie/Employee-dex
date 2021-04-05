@@ -12,12 +12,9 @@ function App() {
   const [ searchTerm, setSearchTerm ] = useState("");
   const [ sort, setSort ] = useState(false);
   const [ dataset, setEmployees ] = useState(data);
-  
-  // const [ role, setRole ] = useState(data.employees);
 
-  const handleSearchTerm = value => {
-    setSearchTerm(value);
-    // filteredEmployees(value);
+  const handleSearchTerm = event => {
+    setSearchTerm(event.target.value);
   };
   
   const handleSortFirstName = (event) => {
@@ -41,6 +38,10 @@ function App() {
       setSort(false);
     };
   };
+
+  // const excludedColumns = ["id", "image", "name", "department", "email", "phone"]
+
+  const filteredEmployees =  dataset.filter(employee => employee.title.toLowerCase().includes(searchTerm.toLowerCase()))
 
   // const filteredEmployees = (value) => {
   //   const lowercasedValue = value.toLowerCase().trim();
@@ -70,7 +71,7 @@ function App() {
               handleSortFirstName={handleSortFirstName}
               handleSortLastName={handleSortLastName}
             />
-            <EmployeeCardList data={data}/>
+            <EmployeeCardList data={filteredEmployees}/>
           </Layout>
       </Container>
       <Footer />
