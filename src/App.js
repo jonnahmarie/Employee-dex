@@ -12,20 +12,32 @@ function App() {
   const [ searchTerm, setSearchTerm ] = useState("");
   const [ sort, setSort ] = useState(false);
   const [ dataset, setEmployees ] = useState(data);
+  
   // const [ role, setRole ] = useState(data.employees);
 
   const handleSearchTerm = value => {
     setSearchTerm(value);
     // filteredEmployees(value);
   };
-
-  const handleSortName = (event) => {
+  
+  const handleSortFirstName = (event) => {
     event.stopPropagation();
     if (!sort) {
-      setEmployees(dataset.sort((a, b) => (a.last_name > b.last_name) ? 1 : -1));
+      setEmployees(dataset.sort((a, b) => (a.name > b.name) ? 1 : -1));
       setSort(true);
     } else {
-      setEmployees(dataset.sort((a, b) => (a.last_name > b.last_name) ? -1 : 1));
+      setEmployees(dataset.sort((a, b) => (a.name > b.className) ? -1 : 1));
+      setSort(false);
+    };
+  };
+
+  const handleSortLastName = (event) => {
+    event.stopPropagation();
+    if (!sort) {
+      setEmployees(dataset.sort((a, b) => (a.name.split(' ')[1] > b.name.split(' ')[1]) ? 1 : -1));
+      setSort(true);
+    } else {
+      setEmployees(dataset.sort((a, b) => (a.name.split(' ')[1] > b.name.split(' ')[1]) ? -1 : 1));
       setSort(false);
     };
   };
@@ -55,7 +67,8 @@ function App() {
             <Nav 
               onSearch={handleSearchTerm}
               searchTerm={searchTerm}
-              handleSortName={handleSortName}
+              handleSortFirstName={handleSortFirstName}
+              handleSortLastName={handleSortLastName}
             />
             <EmployeeCardList data={data}/>
           </Layout>
